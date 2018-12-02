@@ -11,9 +11,20 @@ function makeTheSameHightOfArticle() {
 		return (elemImg.height - parseInt(computedStyleOfElemInf.paddingTop, 10) + "px");
 	}
 }
+
+function makeTheSameHightOfArticleForResize() {
+	if (document.documentElement.clientWidth > 1200) {
+		makeTheSameHightOfArticle();
+	} else {
+		var elemInf = document.getElementById("article-darck");
+		elemInf.style.height = "auto";
+	}; 
+}
+
 if (document.documentElement.clientWidth > 1200) {
 	makeTheSameHightOfArticle();
-	window.onresize = makeTheSameHightOfArticle;
 }
+
+window.onresize = makeTheSameHightOfArticleForResize;
 
 // alert(document.documentElement.clientWidth);
