@@ -16,6 +16,12 @@
 	src: url(../fonts/MyriadPro-Regular.otf);
 }
 
+/*
+html {
+	font-size: 100%;
+}
+ */
+
 body {
 	background-color: #f2f2f2;
 	color: #222222;
@@ -297,16 +303,37 @@ body {
 }
 
 .article {
+	padding: 4em;
 	overflow: hidden;
-	text-overflow: ellipsis;
+	text-overflow: clip;
 }
-
 
 /*****Media queries*****/
 
 @media (max-width: 1200px) {
 	.wrap-feature {
 		padding-bottom: 20px;
+	}
+	
+	.wrap-article {
+		display: block;
+	}
+	
+	.article, .wrap-img {
+		width: 100%;
+	}
+
+	.article {
+		height: auto;
+	}
+
+	.wrap-article-darck {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column-reverse;
 	}
 }
 

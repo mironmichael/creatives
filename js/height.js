@@ -1,29 +1,19 @@
-/*
-var elemImg = document.getElementById("img-article");
-var elemInf = document.getElementById("article-darck");
+function makeTheSameHightOfArticle() {
+		var elemImg = document.getElementById("img-article");
+		var elemInf = document.getElementById("article-darck");
+		var computedStyleOfElemInf = getComputedStyle(elemInf);
 
-elemInf.style.height = elemImg["height"] + "px";
-elemInf = document.getElementById("article-white");
-elemInf.style.height = elemImg["height"] + "px";
+		elemInf.style.height = getTheHight();
+		elemInf = document.getElementById("article-white");
+		elemInf.style.height = getTheHight();
 
-window.onresize = function makeTheSameHight() {
-	var elemImg = document.getElementById("img-article");
-	var elemInf = document.getElementById("article-darck");
-
-	elemInf.style.height = elemImg["height"] + "px";
-	elemInf = document.getElementById("article-white");
-	elemInf.style.height = elemImg["height"] + "px";
+	function getTheHight() {
+		return (elemImg.height - parseInt(computedStyleOfElemInf.paddingTop, 10) + "px");
+	}
 }
-*/
-
-function makeTheSameHight() {
-	var elemImg = document.getElementById("img-article");
-	var elemInf = document.getElementById("article-darck");
-
-	elemInf.style.height = elemImg["height"] + "px";
-	elemInf = document.getElementById("article-white");
-	elemInf.style.height = elemImg["height"] + "px";
+if (document.documentElement.clientWidth > 1200) {
+	makeTheSameHightOfArticle();
+	window.onresize = makeTheSameHightOfArticle;
 }
 
-makeTheSameHight();
-window.onresize = makeTheSameHight;
+// alert(document.documentElement.clientWidth);
