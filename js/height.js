@@ -16,9 +16,13 @@ function makeTheSameHightOfArticleForResize() {
 	if (document.documentElement.clientWidth > 1200) {
 		makeTheSameHightOfArticle();
 	} else {
-		var elemInf = document.getElementById("article-darck");
-		elemInf.style.height = "auto";
+		makeAutoHeight("article-darck");
+		makeAutoHeight("article-white");
 	}; 
+		function makeAutoHeight(element) {
+			var elemInf = document.getElementById(element);
+			elemInf.style.height = "auto";
+		}
 }
 
 if (document.documentElement.clientWidth > 1200) {
@@ -26,5 +30,3 @@ if (document.documentElement.clientWidth > 1200) {
 }
 
 window.onresize = makeTheSameHightOfArticleForResize;
-
-// alert(document.documentElement.clientWidth);

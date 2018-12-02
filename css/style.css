@@ -305,7 +305,7 @@ body {
 .article {
 	padding: 4em;
 	overflow: hidden;
-	text-overflow: clip;
+	text-overflow: ellipsis;
 }
 
 /*****Media queries*****/
