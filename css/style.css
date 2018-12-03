@@ -16,11 +16,10 @@
 	src: url(../fonts/MyriadPro-Regular.otf);
 }
 
-/*
+
 html {
-	font-size: 100%;
+	scroll-behavior: smooth;
 }
- */
 
 body {
 	background-color: #f2f2f2;
@@ -203,7 +202,7 @@ body {
 	position: relative;
 }
 
-.w-letter {
+.letter {
 	margin: 1.3vw 0 0 0;
 	opacity: 0.18;
 	color: #ffffff;
@@ -271,7 +270,7 @@ body {
 	color: #ffffff;
 	font-size: 18px;
 	font-weight: 500;
-	line-height: 36px;
+	line-height: 27px;
 	text-transform: uppercase;
 	margin-top: 24px;
 	text-align: center;
@@ -306,6 +305,38 @@ body {
 	padding: 4em;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+/*****Section Let's blog*****/
+.b-letter {
+	color: #222;
+	z-index: 1;
+}
+
+.lets-blog {
+	background-color: #fff;
+	color: #222;
+	font-weight: 600;
+}
+
+.slogan {
+	color: #222;
+	font-size: 2.5vw;
+	font-weight: 400;
+	z-index: 1;
+	margin-top: 0;
+}
+
+.lets-blog h3 {
+	color: #11749e;
+}
+
+.blog-preview {
+	margin-top: 0;
+}
+
+.lets-blog p {
+	color: #222222;
 }
 
 /*****Media queries*****/
@@ -417,9 +448,11 @@ body {
 		margin-top: 20px;
 		height: 115px;
     	top: 11px;
+    	text-align: center;
+    
 	}
 
-	.w-letter {
+	.letter {
 		font-size: 115px;
 		height: 115px;
 	}
@@ -427,7 +460,12 @@ body {
 	.wrap-feature-section {
     	margin: 68px 78px 128px;
 	}
-
+	
+	.slogan {
+		font-size: 18px;
+		text-align: center;
+		margin-top: 3vw;
+	}
 }
 
 @media (max-width: 422px) {
