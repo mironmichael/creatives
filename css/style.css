@@ -339,7 +339,7 @@ body {
 
 .slogan {
 	color: #222;
-	font-size: 2.5vw;
+	font-size: 2vw;
 	font-weight: 400;
 	z-index: 1;
 	margin-top: 0;
@@ -355,6 +355,38 @@ body {
 
 .lets-blog p {
 	color: #222222;
+}
+
+.blog-item:hover {
+	text-decoration: none;
+}
+
+.team-member {
+	position: relative;
+}
+
+.team-member-label {
+	background-color: #fff;
+	padding: 23px 40px 50px 40px;
+	position: absolute;
+	bottom: 30px;
+}
+
+.nickname {
+	color: #11749e;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.team-member-label .position {
+	color: #000000;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 24px;
+	margin: 0;
 }
 
 /*Section Notes*/
@@ -460,6 +492,13 @@ body {
 
 .button-third {
 	padding-right: 159px;
+}
+
+/*****Section our team*****/
+
+.t-letter {
+	color: #222222;
+	z-index: 1;
 }
 
 /*****Media queries*****/
@@ -667,8 +706,7 @@ body {
 	.article-darck, .article-white {
 		padding-right: 78px;
 		padding-left: 78px;
-		text-align: justify;
-		
+		text-align: justify;		
 	}
 
 	.note-img {
