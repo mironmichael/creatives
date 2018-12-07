@@ -535,6 +535,10 @@ body {
 	background-size: 100% auto;
 }
 
+.feedback .wrap-feature-section {
+	margin-bottom: 0;
+}
+
 .wrap-input-text {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -581,6 +585,29 @@ body {
 	width: 227px;
 }
 
+/*****Section "map"*****/
+
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:17.85%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/*
+.map-img {
+		width: 100%;
+		height: auto;
+	}
+*/
 /*****Media queries*****/
 
 @media (max-width: 1200px) {
