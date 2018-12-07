@@ -731,9 +731,11 @@ body {
 		align-items: center;
 		justify-content: flex-start;
 		text-align: center;
-			
-}
-
+	}
+	
+	.copyright {
+		margin-bottom: 15px;
+	}
 }
 
 @media (max-width: 1100px) {
