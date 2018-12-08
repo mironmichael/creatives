@@ -164,8 +164,11 @@ body {
 
 .wrap-scroll {
 	margin-bottom: 7vh;
-	text-align: center;
-	
+	text-align: center;	
+}
+
+.wrap-scroll a:hover {
+	text-decoration: none;
 }
 
 .scroll-text {
@@ -322,6 +325,10 @@ body {
 	margin: 0;
 }
 
+.img-article {
+	width: 100%;
+}
+
 .date {
 	margin-bottom: 0;
 }
@@ -361,7 +368,9 @@ body {
 	text-decoration: none;
 }
 
-
+.blog-item img {
+	width: 100%;
+}
 
 /*Section Notes*/
 
@@ -484,6 +493,9 @@ body {
 	margin-bottom: 50px;
 }
 
+.team-member img {
+	width: 100%;
+}
 
 .team-member-label {
 	width: 75%;
